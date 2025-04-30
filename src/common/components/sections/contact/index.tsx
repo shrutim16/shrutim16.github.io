@@ -31,46 +31,16 @@ export default function Contact() {
     >
       <SectionHeading>Hit me up!</SectionHeading>
       <div className="w-[min(100%,38rem)] px-4">
-        <p className="mb-20 mt-6 text-gray-700 dark:text-white/80">
+        <p className="mb-20 mt-6 text-black-600 dark:text-white/80">
           Please contact me directly at{" "}
-          <a className="underline" href="mailto:azimov.workspace@gmail.com">
-            azimov.workspace@gmail.com
+          <a className="underline font-semibold text-blue-600 dark:text-blue/80" href="mailto:mahajasu@mail.uc.edu">
+            mahajasu@mail.uc.edu
           </a>{" "}
-          or through this form.
+          or via <a className= "underline font-semibold text-blue-600 dark:text-blue/80" href=" https://www.linkedin.com/in/shrutimahajan/"
+          target="_blank"> LinkedIn </a>
         </p>
 
-        <form
-          className="mt-10 flex flex-col dark:text-black"
-          action={async (formData) => {
-            const { error } = await sendEmail(formData);
-
-            if (error) {
-              toast.error(error);
-              return;
-            }
-
-            toast.success("Email sent successfully!");
-          }}
-        >
-          <input
-            className="h-14 rounded-lg border bg-gray-50 px-4 transition-all dark:bg-white dark:bg-opacity-80 dark:placeholder:text-darkBg dark:focus:bg-opacity-100"
-            name="senderEmail"
-            type="email"
-            required
-            maxLength={500}
-            placeholder="Your email"
-          />
-          <textarea
-            className="my-3 h-52 resize-none rounded-lg border bg-gray-50 p-4 transition-all dark:bg-opacity-80 dark:outline-none dark:placeholder:text-darkBg dark:focus:bg-opacity-100"
-            name="message"
-            placeholder="Your message 👋"
-            required
-            maxLength={5000}
-          />
-          <div className="flex justify-center">
-            <SubmitBtn />
-          </div>
-        </form>
+        
       </div>
     </motion.section>
   );

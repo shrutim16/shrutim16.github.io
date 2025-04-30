@@ -45,7 +45,11 @@ export default function Experience() {
                   display: theme === 'dark' ? 'none' : 'block',
                 }}
                 date={item.date}
-                icon={item.icon}
+                icon={<img src={item.icon}  
+                width={100}
+                height={100}
+                className="rounded-full lg:h-[80px] lg:w-[80px] xl:h-[60px] xl:w-[60px]"
+                />}
                 iconStyle={{
                   background:
                     theme === 'light' ? '#fff' : 'rgba(255, 255, 255, 0.15)',
@@ -54,7 +58,8 @@ export default function Experience() {
                 }}
               >
                 <h3 className="font-semibold">{item.title}</h3>
-                <p className="!mt-0 font-normal">{item.location}</p>
+                <p className="!mt-1 font-normal text-gray-700 dark:text-white/75">{item.company}</p>
+                <p className="!mt-1 font-normal italic text-gray-700 dark:text-white/75">{item.location}</p>
                 <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                   {item.description}
                 </p>

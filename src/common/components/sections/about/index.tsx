@@ -43,21 +43,20 @@ export default function About() {
           }}
         >
           <div className="antialiased group relative w-full">
-            <div className="text-md relative z-40 flex flex-col gap-3 font-semibold tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
+            <div className="text-md relative z-40 flex flex-col gap-3 font-normal tracking-wide text-primary lg:absolute lg:right-0 lg:top-[27%] lg:block lg:max-w-[580px] lg:text-start lg:text-lg xl:top-1/3 xl:h-[442px] xl:max-w-[650px]">
               <div className="flex h-full flex-col justify-center gap-6">
                 <span>
-                  I&apos;m Front-end developer with expertise in TypeScript,
-                  React & Next.js. Proven ability to deliver user-centered web
-                  applications with a focus on intuitive experiences and user
-                  interaction.
+                Hey there, I'm Shruti! I'm an Electrical Engineer with a passion for building smart, tiny things — from sensors and microsystems 
+                to innovative product designs. I'm deeply interested in how things are made, from precision manufacturing and 
+                microfabrication to scaling up ideas into real products. Whether it's designing in CAD, 
+                refining a manufacturing process, or experimenting with new materials, I love bringing ideas to life. 
+                I'm always curious, always learning, and excited to take on new challenges. When I'm not engineering, you’ll find me 
+                traveling, cooking, baking, or dreaming up the next big innovation. 
+               
                 </span>
-                <span>
-                  Seeking for Web Development opportunities where I can leverage
-                  my skills to create meaningful connections between products
-                  and users.
-                </span>
+                
                 <p className="flex flex-col items-start sm:items-center lg:items-start">
-                  <span>So if you are interested,</span>
+                  <span>Hit me up and let’s build something incredible together! Cheers!</span>
                   <Link
                     href={'contact'}
                     onClick={(e) => {
@@ -72,9 +71,8 @@ export default function About() {
                 </p>
               </div>
             </div>
-            <div className="absolute z-30 hidden lg:left-0 lg:top-1/4 lg:block">
+            <div className="absolute z-30 lg:left-0 lg:top-1/4 lg:block">
               <div className="relative h-72 w-72 lg:h-[380px] lg:w-[380px] xl:h-[470px] xl:w-[470px]">
-                <div className="absolute inset-0 z-20 rounded-full bg-gradient-to-b from-[#ffcbb4] via-[#e0afa0] to-[#e29578] transition-opacity group-hover:opacity-30" />
                 <div className="absolute inset-0">
                   <Image
                     src={portfolioImg}

@@ -1,5 +1,5 @@
 "use client";
-
+ 
 import React from "react";
 import { skillsData } from "@/common/lib/data";
 import { useSectionInView } from "@/common/lib/hooks";
@@ -7,7 +7,8 @@ import { motion } from "framer-motion";
 import Image from "next/image";
 import SectionHeading from "@/common/components/shared/section-heading";
 import SectionDivider from "@/common/components/shared/section-divider";
-
+import Skill from "./_components/skill";
+ 
 const fadeInAnimationVariants = {
   initial: {
     opacity: 0,
@@ -21,10 +22,10 @@ const fadeInAnimationVariants = {
     },
   }),
 };
-
+ 
 export default function Skills() {
-  const { ref } = useSectionInView("skills");
-
+  const { ref } = useSectionInView("skills",0.25);
+ 
   return (
     <section
       id="skills"
@@ -32,10 +33,10 @@ export default function Skills() {
       className="flex w-full flex-col items-center justify-center py-24 pb-[150px] text-center dark:bg-darkBg dark:text-white sm:pb-40"
     >
       <SectionHeading>My skills</SectionHeading>
-      <ul className="my-26 mb-[150px] flex max-w-[53rem] flex-wrap items-center justify-center gap-2 text-lg text-gray-800">
+      <ul className="my-26 mb-[150px]  max-w-[53rem]  items-center justify-center gap-2 text-lg text-gray-800">
         {skillsData.map((skill, index) => (
           <motion.li
-            className="borderBlack flex items-center justify-center rounded-xl bg-gray-200 px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="borderBlack mb-[15px] flex items-center justify-center rounded-xl bg-gray-200 px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
             variants={fadeInAnimationVariants}
             initial="initial"
@@ -45,14 +46,7 @@ export default function Skills() {
             }}
             custom={index}
           >
-            <Image
-              src={skill[1]}
-              alt={skill[0]}
-              width={24}
-              height={24}
-              className="mr-2 inline h-6 w-6"
-            />
-            {skill[0]}
+            <Skill {...skill}></Skill>
           </motion.li>
         ))}
       </ul>
@@ -62,3 +56,5 @@ export default function Skills() {
     </section>
   );
 }
+ 
+ 
