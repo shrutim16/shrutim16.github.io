@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
  
-type skillsProps = (typeof skillsData[0])[number];
+type skillsProps = (typeof skillsData)[number];
  
 export default function Skill({
   title,

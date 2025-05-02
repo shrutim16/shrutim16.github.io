@@ -29,7 +29,7 @@ export default function Project({
   const opacityProgess = useTransform(scrollYProgress, [0, 1], [0.6, 1]);
   const [clickedProject, setClickedProject] = useState<boolean>(false);
   const [clickClass, setClickClass] = useState<string>("group mb-3 last:mb-0 sm:mb-8");
-  const handleProjectClick = (onClick) => {
+  const handleProjectClick = (onClick: (() => void) | undefined) => {
     if (clickedProject ) {
       // If the same project is clicked, reset state to null
       setClickedProject(false);
@@ -39,7 +39,8 @@ export default function Project({
       setClickedProject(true);
       setClickClass("group");
     }
-    onClick()
+    if(onClick)
+      onClick()
   };
   return (
     <motion.div

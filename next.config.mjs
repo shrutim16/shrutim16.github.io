@@ -7,10 +7,12 @@ const nextConfig = {
         hostname: 'images.unsplash.com',
       },
     ],
+    unoptimized: true,
   },
   compiler: {
     styledComponents: true,
   },
+  output: 'export',
 }
 
 export default nextConfig

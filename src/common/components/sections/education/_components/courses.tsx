@@ -6,8 +6,7 @@ import Image from 'next/image';
 import { motion, useScroll, useTransform } from 'framer-motion';
 import Link from 'next/link';
  
-type CoursesProps = (typeof educationData)[number];
- 
+type CoursesProps ={ courses: readonly String[]}; 
 export default function Courses({
   courses,
 }: CoursesProps) {

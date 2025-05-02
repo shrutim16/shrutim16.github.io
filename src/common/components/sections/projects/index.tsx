@@ -6,9 +6,10 @@ import { projectsData } from "@/common/lib/data";
 import Project from "./_components/project";
 import SectionHeading from "@/common/components/shared/section-heading";
 import SectionDivider from "@/common/components/shared/section-divider";
-import Image from 'next/image';
+import Image, { StaticImageData } from 'next/image';
  
-const NewComponent = ({ detailedDescription, extraImages }: { detailedDescription: Array<string>, extraImages: Array<string> }) => {
+const NewComponent = ({ detailedDescription, extraImages }: { readonly detailedDescription: readonly String[], readonly extraImages: readonly StaticImageData[] }) => {
+ 
   return (
     <div className="mb-3 last:mb-0 sm:mb-8 relative max-w-[52rem] overflow-hidden rounded-lg border transition hover:bg-gray-200 dark:hover:bg-primary-foreground text-black">
       <div className="flex flex-col px-5 pb-7 pt-4 sm:pl-10 sm:pr-2 sm:pt-10">

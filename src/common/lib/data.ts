@@ -11,6 +11,7 @@ import auditMasterImg from '@/../public/images/audit-master.png';
 import kneeImg from '@/../public/images/kneepain.jpg';
 import fluidImg from '@/../public/images/tube.jpg';
 import waferImg from '@/../public/images/wafer.png';
+import carImg from '@/../public/images/Layout.jpg';
 import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
 
 export const links = [
@@ -121,7 +122,7 @@ export const projectsData = [
   {
     title: 'Long Term Knee Joint Monitoring',
     description: 'A wireless, biocompatible implant designed for real-time monitoring of osteoarthritis using precision microfabrication and advanced packaging techniques.',
-    tags: ['Microfabrication', 'SolidWorks', 'Molding', 'Sensor Design', 'Polymer Packaging'],
+    tags: ['Microfabrication/MEMS', 'SolidWorks', 'Molding', 'Sensor Design', 'Polymer Packaging'],
     imageUrl: kneeImg,
     link: '', // Optional: add portfolio or publication link
     detailedDescription: [
@@ -174,7 +175,7 @@ export const projectsData = [
     title: 'Smart Electric Vehicle Charging Station',
   description: `Designed and developed an automated EV charging station with integrated Human-Machine Interface (HMI) and payment system, simulating scalable smart manufacturing processes.`,
   tags: ['PLC', 'EV Charging', 'HMI', 'Automation', 'Smart Manufacturing'],
-  imageUrl: fluidImg,
+  imageUrl: carImg,
   link: '', // Optional: add portfolio or publication link
   detailedDescription: [
     `This project involved the design and development of an automated electric vehicle (EV) charging station, featuring an integrated Human-Machine Interface (HMI) and payment system. The system was designed to simulate a scalable smart manufacturing environment, optimizing user interaction and operational efficiency.`,
@@ -185,7 +186,7 @@ export const projectsData = [
     
     `Additionally, I integrated a payment gateway within the system, enabling secure, automated transactions for users. This setup not only optimized the charging process but also supported smart grid connectivity, allowing for potential scalability in future installations and improvements in energy distribution efficiency.`,
   ],
-  extraImg: [],
+  extraImg: [carImg],
   },
   {
     title: 'Chip Design and Verification',
