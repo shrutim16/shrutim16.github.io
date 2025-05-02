@@ -36,7 +36,7 @@ export default function Hero() {
           loop
           className="absolute -z-10 h-screen w-screen object-cover"
         >
-          <source src="/try.mp4" />
+          <source src="new.mp4" />
         </video>
         <div className="container flex flex-col items-start justify-center tracking-wide text-black dark:text-white">
           <div className="container relative flex h-full w-full flex-col items-center">
@@ -49,7 +49,7 @@ export default function Hero() {
                 Hey!
               </motion.span>
               <br />
-              <TextAnimation delay={1} baseText={`I'm Shruti`} />
+              <TextAnimation delay={1} baseText= {"I'm Shruti"}/>
             </div>
             <motion.div
               className="w-92 flex flex-col items-center justify-center gap-3 px-4 text-sm font-medium md:mt-12 md:flex-row lg:text-lg"

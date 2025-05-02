@@ -10,18 +10,7 @@ export interface IRedoTextAnimationProps {
 export default function RedoTextAnimation({ delay }: IRedoTextAnimationProps) {
   const textIndex = useMotionValue(0);
 
-  const texts = [
-    "I’m an engineering ninja, ready for any challenge",
-    "Circuits and tools are my playground – let’s build magic",
-    "Simplicity is the soul of great design",
-    "Debugging is a hunt – but for real-world flaws",
-    "Precision is my superpower, whatever the scale",
-    "Processes are the poetry of engineering",
-    "Teamwork builds what ideas alone can’t",
-    "Refining processes is digital decluttering",
-    "Learning keeps me sharp for what’s next",
-    "Elegant design defines expert engineering",
-  ];
+  const texts = [''];
 
   const baseText = useTransform(textIndex, (latest) => texts[latest] || "");
   const count = useMotionValue(0);

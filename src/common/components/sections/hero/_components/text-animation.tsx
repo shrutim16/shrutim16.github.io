@@ -46,8 +46,7 @@ export default function TextAnimation({
           <br />
         </>
       )}
-      <RedoAnimText delay={delay + 1} />
-      <CursorBlinker />
+
     </motion.span>
   );
 }

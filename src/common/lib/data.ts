@@ -12,6 +12,8 @@ import kneeImg from '@/../public/images/kneepain.jpg';
 import fluidImg from '@/../public/images/tube.jpg';
 import waferImg from '@/../public/images/wafer.png';
 import carImg from '@/../public/images/Layout.jpg';
+import car1Img from '@/../public/images/circuit.png';
+import chipImg from '@/../public/images/chip.png';
 import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
 
 export const links = [
@@ -85,7 +87,7 @@ export const experiencesData = [
     company:'University of Cincinnati',
     location: 'Cincinnati, Ohio',
     description:
-      'Instructed students on microfabrication process flows (photolithography, etching, PVD, bonding) to fabricate MEMS pressure sensors in an 8000+ sq.ft cleanroom facility encompassing Class 10 to Class 10,000 environments.',
+    'Instructed students on MEMS sensor fabrication using photolithography, etching, PVD, and bonding in a cleanroom environment. Also, ptovided training on equipment use and troubleshooting, while ensuring OSHA safety compliance.',
     icon: './svgs/uc.svg',
     date: 'January 2023 - April 2025',
   },
@@ -94,7 +96,7 @@ export const experiencesData = [
     company:'Schnedier Electric',
     location: 'Cincinnati, Ohio',
     description:
-      'Led 5S and Kaizen initiatives in a 100,000 sq. ft. facility, boosting efficiency by 20% with zero safety incidents in 4 months. ',
+    'Drove process improvements via cycle time reduction by 50% through SOPs, root cause analysis, and statistical process control. Implemented lean and AI-driven strategies to improve efficiency and cut lead times. Led 5S and Kaizen initiatives, boosting productivity by 20% with zero safety incidents.',
     icon: './svgs/se.png',
     date: 'August 2024 - December 2024',
   },
@@ -103,7 +105,7 @@ export const experiencesData = [
     company:'Rishabh Instruments',
     location: 'India',
     description:
-      'Assisted with PCB design in Eagle, assembled and soldered components, tested for functionality and documented results.',
+      'Assisted in PCB design using Eagle, assembly and testing of components and collaborated with NPI teams to develop and evaluate industrial control products.',
     icon: './svgs/ri.jpg',
     date: 'August 2021 - September 2021',
   },
@@ -139,7 +141,7 @@ export const projectsData = [
   {
     title: 'Microfluidic Viscometer for Biomedical Fluid Analysis',
     description: `A compact, cost-effective microfluidic viscometer for small sample volumes, designed to enable precise viscosity measurements in biomedical applications.`,
-    tags: ['Microfluidics', 'COMSOL', 'Biomedical Engineering', 'Viscometer', 'Fluid Dynamics'],
+    tags: ['Product Design', 'COMSOL', 'Microfluidics', 'Fluid Dynamics', 'System Integration'],
     imageUrl: fluidImg,
     link: '', // Optional: add portfolio or publication link
     detailedDescription: [
@@ -175,7 +177,7 @@ export const projectsData = [
     title: 'Smart Electric Vehicle Charging Station',
   description: `Designed and developed an automated EV charging station with integrated Human-Machine Interface (HMI) and payment system, simulating scalable smart manufacturing processes.`,
   tags: ['PLC', 'EV Charging', 'HMI', 'Automation', 'Smart Manufacturing'],
-  imageUrl: carImg,
+  imageUrl: carImg,car1Img,
   link: '', // Optional: add portfolio or publication link
   detailedDescription: [
     `This project involved the design and development of an automated electric vehicle (EV) charging station, featuring an integrated Human-Machine Interface (HMI) and payment system. The system was designed to simulate a scalable smart manufacturing environment, optimizing user interaction and operational efficiency.`,
@@ -186,13 +188,13 @@ export const projectsData = [
     
     `Additionally, I integrated a payment gateway within the system, enabling secure, automated transactions for users. This setup not only optimized the charging process but also supported smart grid connectivity, allowing for potential scalability in future installations and improvements in energy distribution efficiency.`,
   ],
-  extraImg: [carImg],
+  extraImg: [carImg, car1Img],
   },
   {
     title: 'Chip Design and Verification',
   description: `Designed and verified a digital chip with integrated functionalities for efficient data processing and system control.`,
   tags: ['Chip Design', 'Verification', 'Digital Systems', 'VHDL', 'FPGA'],
-  imageUrl: fluidImg,
+  imageUrl: chipImg,
   link: '', // Optional: add portfolio or publication link
   detailedDescription: [
     `This project involved designing and verifying a digital chip intended for efficient data processing and control in embedded systems. The design process included creating the architecture and defining the functional specifications of the chip.`,
@@ -203,7 +205,7 @@ export const projectsData = [
     
     `The successful design and verification of the chip were critical in ensuring its readiness for deployment in larger systems. This process also helped refine my understanding of digital circuit design and FPGA-based implementation in practical applications.`,
   ],
-  extraImg: [],
+  extraImg: [chipImg],
   },
 
 ] as const;
