@@ -14,6 +14,8 @@ import waferImg from '@/../public/images/wafer.png';
 import carImg from '@/../public/images/Layout.jpg';
 import car1Img from '@/../public/images/circuit.png';
 import chipImg from '@/../public/images/chip.png';
+import tollImg from '@/../public/images/pcb.png';
+import toll1Img from '@/../public/images/ckt.png';
 import { BookIcon, BriefcaseBusinessIcon } from 'lucide-react';
 
 export const links = [
@@ -191,7 +193,7 @@ export const projectsData = [
   extraImg: [carImg, car1Img],
   },
   {
-    title: 'Chip Design and Verification',
+  title: 'Chip Design and Verification',
   description: `Designed and verified a digital chip with integrated functionalities for efficient data processing and system control.`,
   tags: ['Chip Design', 'Verification', 'Digital Systems', 'VHDL', 'FPGA'],
   imageUrl: chipImg,
@@ -207,6 +209,23 @@ export const projectsData = [
   ],
   extraImg: [chipImg],
   },
+  {
+    title: 'RFID-Enabled Smart Toll Booth System',
+    description: `A microcontroller-based system designed to automate toll payments using RFID technology, reducing congestion and improving efficiency at toll plazas.`,
+    tags: ['Microcontroller programming', 'PCB Design', 'Embedded systems', 'Sensor interfacing', 'Serial communication', 'System integration'],
+    imageUrl:toll1Img,
+    link: '', // Optional: add portfolio or publication link
+    detailedDescription: [
+      'This project focuses on developing an intelligent traffic management solution using RFID technology and the 8052 microcontroller.',
+      
+      'It automates toll collection by replacing manual payment systems with a contactless RFID-based approach. Vehicles equipped with passive RFID tags are detected by a reader installed at the toll plaza.',
+      
+      'Once a vehicle is identified, the toll amount is automatically deducted from a prepaid account linked to the tag, significantly reducing congestion, saving time, and enhancing user convenience.',
+      
+      'The system also supports manual lanes using handheld RFID readers, offering flexibility and improving overall traffic flow efficiency.',
+    ],
+    extraImg: [toll1Img],
+    },
 
 ] as const;
 
