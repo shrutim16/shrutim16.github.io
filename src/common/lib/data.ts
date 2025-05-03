@@ -283,7 +283,17 @@ export const skillsData = [
       'Design of Experiments',
       'Value Stream Mapping',
       'Kaizen'],
-  },
+    },
+
+    {
+      title:'Certifications',
+      ags: [
+        'Lean Six Sigma - Green Belt', 
+        'Lean Six Sigma - Yellow Belt',
+        'Introduction to 5S',
+        'OASiS Rapid Certification in Semiconductors Program'],
+
+    },
   ] as const;
 
  
