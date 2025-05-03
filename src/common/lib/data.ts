@@ -287,7 +287,7 @@ export const skillsData = [
 
     {
       title:'Certifications',
-      ags: [
+      tags: [
         'Lean Six Sigma - Green Belt', 
         'Lean Six Sigma - Yellow Belt',
         'Introduction to 5S',
