@@ -69,7 +69,7 @@ export const educationData = [
     university:'Savitribai Phule Pune University',
     degree: 'Bachelor of Engineering in Electronics and Telecommunication',
     GPA: 'GPA: 3.86 / 4.0',
-    location: 'Cincinnati, Ohio',
+    location: 'Maharashtra, India',
     courses: [
       'Digital Electronics',
       'Analog Circuits',
